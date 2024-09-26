@@ -1,0 +1,219 @@
+window.onload = () => {
+    fetchWeather("Uyo");
+};
+
+
+
+
+function fetchWeather(city) {
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=9b40b48969f85beeb0469831492b38b3`;
+
+    
+
+
+    const securityTipText = citySecurityTips[city] || "No specific security tips available for this city.";
+    // document.getElementById("securityTip").innerText = "securityTipText";
+
+
+
+
+    fetch(apiUrl)
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.json();
+        })
+        .then(data => {
+            // Update the DOM with the fetched weather data
+            document.querySelector(".city").innerHTML = data.name;
+            document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+            document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
+            document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+
+
+            
+            // Determine the current weather condition and update the weather icon accordingly
+            const weatherCondition = data.weather[0].main;
+            switch (weatherCondition) {
+                case "Clouds":
+                    document.querySelector(".weather-icon").src = "images/clouds.png";
+                    break;
+                case "Clear":
+                    document.querySelector(".weather-icon").src = "images/clear.png";
+                    break;
+                case "Rain":
+                    document.querySelector(".weather-icon").src = "images/rain.png";
+                    break;
+                case "Drizzle":
+                    document.querySelector(".weather-icon").src = "images/drizzle.png";
+                    break;
+                case "Mist":
+                    document.querySelector(".weather-icon").src = "images/mist.png";
+                    break;
+                case "Snow":
+                    document.querySelector(".weather-icon").src = "images/snow.png";
+                    break;
+                default:
+                    document.querySelector(".weather-icon").src = "images/default.png"; // Default icon
+            }
+
+
+
+            // Set the location icon based on the city
+            const locationIconSrc = city === "Uyo" ? "images/location.svg" : "images/location.svg";
+            document.getElementById("locationIcon").src = locationIconSrc;
+
+
+             // Extract and display the weather situation
+             const weatherSituation = data.weather[0].main;
+             document.querySelector(".weather-situation").innerText = weatherSituation.toUpperCase(); // Convert to uppercase for consistency
+
+
+            // Show the weather details
+            document.querySelector(".weather").style.display = "block";
+
+
+
+
+            // Display the security tip for the selected city
+            const securityTipText = citySecurityTips[city];
+            if (securityTipText) {
+    // Check if the text fits within the designated area
+    const tipElement = document.getElementById("securityTip");
+    if (tipElement.scrollHeight > tipElement.clientHeight) {
+        // Text is too long, truncate or handle as needed
+        tipElement.innerText = securityTipText.substring(0, 150) + "..."; // Truncate with ellipsis
+    } else {
+        // Text fits, set it normally
+        tipElement.innerText = securityTipText;
+    }
+} else {
+    // Handle the case where no security tip is defined for the city
+    console.log(`No security tip available for ${city}`);
+}
+        })
+
+
+        .catch(error => {
+            console.error('There has been a problem with your fetch operation:', error);
+            document.querySelector(".error").style.display = "block";
+        });
+}
+
+
+
+function updateWeatherInfo(stateName,) {
+    document.getElementById("stateName").innerText = stateName;
+  
+}
+
+
+
+
+
+
+
+
+
+
+const citySecurityTips = {
+    "Ado-Ekiti": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..eknienuninon3uhurrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrnhuhuh3noi.",
+    "Uyo": "uyoLorem Ipsum is simply dummy tLorem Ipsum is simply dummy text of the printing and Lorem Ipsum is simply dummy text of the printing and ext of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..eknienuninon3uhurrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrnhuhuh3noiyojtonrkndummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
+    "Calabar": "hbjheuhreuubduwgeuwhigeiweie0wjeoih 1500s...",
+    "Delta": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
+    "Abuja": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
+    "Osun": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
+    "Abakaliki": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..."
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // background change code
+// document.getElementById("container").style.backgroundImage = "url(images/morning.png)";
+
+function updateTimeBasedBackground() {
+    const currentTime = new Date();
+    let backgroundImage = '';
+    let greetingText = '';
+    let timeString = '';
+    let dateString = '';
+    let dayOfWeek = '';
+
+    if (currentTime.getHours() >= 6 && currentTime.getHours() <= 11) {
+        backgroundImage = 'url(images/morning.png)';
+        greetingText = 'Good Morning';
+        timeString = `${currentTime.toLocaleTimeString([], { hour: 'numeric', minute: 'numeric' })}`; // Time without seconds
+        dateString = `${currentTime.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`; // Full date format
+        dayOfWeek = currentTime.toLocaleString('en-US', { weekday: 'long' }); // Full name of the day of the week
+    } else if (currentTime.getHours() >= 12 && currentTime.getHours() <= 17) {
+        backgroundImage = 'url(images/afternoon.png)';
+        greetingText = 'Good Afternoon';
+        timeString = `${currentTime.toLocaleTimeString([], { hour: 'numeric', minute: 'numeric' })}`; // Time without seconds
+        dateString = `${currentTime.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`; // Full date format
+        dayOfWeek = currentTime.toLocaleString('en-US', { weekday: 'long' }); // Full name of the day of the week
+    } else {
+        backgroundImage = 'url(images/evening.png)';
+        greetingText = 'Good Evening';
+        timeString = `${currentTime.toLocaleTimeString([], { hour: 'numeric', minute: 'numeric' })}`; // Time without seconds
+        dateString = `${currentTime.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`; // Full date format
+        dayOfWeek = currentTime.toLocaleString('en-US', { weekday: 'long' }); // Full name of the day of the week
+    }
+
+    document.getElementById("container").style.backgroundImage = backgroundImage;
+    document.getElementById("container").style.backgroundPosition = '5%';
+
+    document.getElementById("greeting").textContent = greetingText;
+    document.getElementById("timeDiv").textContent = timeString;
+    document.getElementById("timeDiv2").textContent = timeString;
+    document.getElementById("dateDiv2").textContent = dateString;
+    document.getElementById("dateDiv").textContent = dateString;
+    document.getElementById("dayOfWeekDiv").textContent = dayOfWeek;
+}
+
+// Call the function initially to set the correct background image, greeting, and time/date for the current moment
+updateTimeBasedBackground();
+
+// Update the background image, greeting, and time/date every minute
+setInterval(updateTimeBasedBackground, 60 * 1000);
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// new integration
+
+
+
+
+
+
+
+
+

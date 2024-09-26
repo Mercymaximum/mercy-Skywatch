@@ -1,0 +1,525 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	/* box-sizing: border-box; */
+}
+
+
+:root{
+
+    --clr-button1: #096D49;  
+    --clr-button11:#FFFFFF;
+    --clr-button2: #6BA792;
+    --clr-button22:#FFFFFF;
+    --clr-button3: #FFFFFF; 
+    --clr-button4: #043724;
+    --clr-button44:#CEE2DB;
+    --clr-button4-outline:#6BA792;
+    --clr-body-background-color: #FFFFFF;
+    --clr-button-primary-color: #096D49;  
+    --clr-button-Hover-color: #6BA792;
+}
+
+
+/* FONT Weight Description:
+
+Bold: 700
+Medium: 500
+Regular: 400  */
+
+@font-face {
+    font-family: Satoshi-Bold;
+    src: url(/adolesenceFont/Satoshi/Satoshi-Bold.woff);
+    /* font-weight: bold; */
+  }
+
+@font-face {
+  font-family: Satoshi-Medium;
+  src: url(/adolesenceFont/Satoshi/Satoshi-Medium.woff);
+  /* font-weight: bold; */
+}
+
+@font-face {
+    font-family: Satoshi-Regular;
+    src: url(/adolesenceFont/Satoshi/Satoshi-Regular.woff);
+    /* font-weight: bold; */
+  }
+
+  @font-face {
+    font-family: BalsamiqSans-Bold;
+    src: url(/adolesenceFont/Balsamiq_Sans/BalsamiqSans-Bold.ttf);
+    /* font-weight: 100; */
+  }
+
+  @font-face {
+    font-family: BalsamiqSans-BoldItalic;
+    src: url(/adolesenceFont/Balsamiq_Sans/BalsamiqSans-BoldItalic.ttf);
+    /* font-weight: 400; */
+  }
+
+
+  @font-face {
+    font-family: BalsamiqSans-Italic;
+    src: url(/adolesenceFont/Balsamiq_Sans/BalsamiqSans-Italic.ttf);
+    /* font-weight: bold; */
+  }
+
+
+  @font-face {
+    font-family: BalsamiqSans-Regular;
+    src: url(/adolesenceFont/Balsamiq_Sans/BalsamiqSans-Regular.ttf);
+    /* font-weight: bold; */
+  }
+
+/* h1 {
+  color: red;
+  font-family: BalsamiqSans-Regular;
+} */
+
+
+.updateNav{
+    height: 5vw;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.updateNav img{
+    height: 3vw;
+    width: 9vw;
+    margin-left: 3vw;
+    cursor: pointer;
+}
+
+.homeButton{
+    height: 2vw;
+    width: 5vw;
+    border: 1px solid var(--clr-button-primary-color);
+    color: var(--clr-button-primary-color) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-right: 4vw;
+    font-family: Satoshi-Regular;
+    font-size: 1vw;
+    user-select: none;
+}
+
+.homeButton:hover{
+    height: 2vw;
+    width: 5vw;
+    border: 1px solid var(--clr-button-Hover-color);
+    color: var(--clr-button-Hover-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-right: 4vw;
+    font-family: Satoshi-Regular;
+    font-size: 1vw;
+}
+
+.securityUpdateTitle{
+    height: 45vw;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 3vw;
+    user-select: none;
+}
+
+.securityUpdateTitle span{
+    background-color: transparent;
+    margin-left: 3.5vw;
+    font-family: Satoshi-Regular;
+    font-size: 0.7vw;
+}
+
+
+.securityUpdateForm{
+    height: auto;
+    width: 40%;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+.formTittle{
+    background-color: transparent;
+    /* margin-left: 3.5vw; */
+    font-family: Satoshi-Bold;
+    font-size: 2vw;
+    user-select: none;
+    /* margin-left: 1vw; */
+}
+
+.currentDate{
+    height: 2vw;
+    width: 100%;
+    background-color: transparnet;
+    display: flex;
+    align-items: center ;
+    margin-top: 1vw;
+    user-select: none;
+}
+
+.currentDate input{
+    height: 1.5vw;
+    width: 84%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    font-family: Satoshi-Regular;
+    font-size: 0.7vw;
+    border: none;
+}
+
+
+.datteInput{
+  height: 1.5vw;
+  width: 84%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+  font-family: Satoshi-Regular;
+  font-size: 0.7vw;
+  border: none;
+}
+
+.currentDateTitle{
+    height: 1.6vw;
+    width: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    /* padding-left: 1vw; */
+    font-family: Satoshi-Medium;
+    font-size: 0.7vw;
+    border: none;
+    user-select: none;
+}
+
+.currentDate input:focus{
+   outline: none;
+}
+
+.location{
+    height: 2vw;
+    width: 99.%;
+    background-color: transparent;
+    display: flex;
+    align-items: center ;
+    margin-top: 0.2vw;
+    border-radius: 8px;
+    border: 1px solid  #e0e0eb;
+    user-select: none;
+}
+
+
+.location select{
+    height: 1.9vw;
+    width: 97%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    padding-Right: 1vw;
+}
+
+
+.location select:focus{
+   outline: none;
+}
+
+.incidentType{
+    height: 2vw;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center ;
+    margin-top: 0.2vw;
+    border-radius: 8px;
+    border: 1px solid  #e0e0eb;
+    user-select: none;
+}
+
+.incidentType textarea{
+    height: 1.4vw;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    padding-Right: 1vw;
+    outline: none;
+    resize: none;
+    font-family: Satoshi-Medium;
+    font-size: 0.7vw;
+    text-align: left;
+    padding-left: 1vw;
+    padding-top: 0.5vw;
+}
+
+.incidentType textarea:focus{
+   outline: none;
+}
+
+.incidentType textarea::placeholder{
+    padding-left: 0vw;
+    padding-top: 0.1vw;
+ }
+
+
+ .information{
+  height: 2vw;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center ;
+  margin-top: 0.2vw;
+  border-radius: 8px;
+  border: 1px solid  #e0e0eb;
+  user-select: none;
+}
+
+.information textarea{
+  height: 1.4vw;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+  padding-Right: 1vw;
+  outline: none;
+  resize: none;
+  font-family: Satoshi-Medium;
+  font-size: 0.7vw;
+  text-align: left;
+  padding-left: 1vw;
+  padding-top: 0.5vw;
+}
+
+.information textarea:focus{
+ outline: none;
+}
+
+.information textarea::placeholder{
+  padding-left: 0vw;
+  padding-top: 0.1vw;
+}
+
+
+ .label{
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    font-family: Satoshi-Regular;
+    font-size: 0.7vw;
+    margin-top: 1vw;
+    padding-left: 0vw;
+ }
+
+ .note{
+    height: 7vw;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center ;
+    margin-top: 0.2vw;
+    border-radius: 8px;
+    border: 1px solid  #e0e0eb;
+    user-select: none;
+ }
+
+ .note textarea{
+    height: 7vw;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    padding-Right: 1vw;
+    outline: none;
+    resize: none;
+    font-family: Satoshi-Medium;
+    font-size: 0.7vw;
+    text-align: left;
+    padding-left: 1vw;
+    padding-top: 1vw;
+ }
+
+ .note textarea:focus{
+    outline: none;
+ }
+ 
+ .note textarea::placeholder{
+     padding-left: 0vw;
+     padding-top: 0vw;
+  }
+
+
+  .Advisory{
+    height: 7vw;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center ;
+    margin-top: 0.2vw;
+    border-radius: 8px;
+    border: 1px solid  #e0e0eb;
+    user-select: none;
+ }
+
+ .Advisory textarea{
+    height: 7vw;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    padding-Right: 1vw;
+    outline: none;
+    resize: none;
+    font-family: Satoshi-Medium;
+    font-size: 0.7vw;
+    text-align: left;
+    padding-left: 1vw;
+    padding-top: 1vw;
+ }
+
+ .Advisory textarea:focus{
+    outline: none;
+ }
+ 
+ .Advisory textarea::placeholder{
+     padding-left: 0vw;
+     padding-top: 0vw;
+  }
+
+  .submitButton{
+    width: 100%;
+    height: 3vw;
+    background: transparent;
+    border:none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    user-select: none;
+    margin-top: 2vw;
+    /* float: right; */
+  }
+
+  
+  .submitButton input{
+    width: 100%;
+    height: 3vw;
+    color: white;
+    font-family: Satoshi-Regular;
+    font-size: 1vw;
+    border: none;
+    background: var(--clr-button-primary-color);
+  }
+
+  .submitButton input:hover{
+    width: 100%;
+    height: 3vw;
+    color: white;
+    background: var(--clr-button-Hover-color);
+    cursor: pointer;
+  }
+
+  .submitButton input:focus{
+    outline: none;
+  }
+
+
+
+
+
+.Dialoguebackground{
+  height: 51vw;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.91;
+
+}
+
+
+
+.updateSuccessDialogueRapper{
+  height: 51vw;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  z-index: 250;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+.updateDialogueBox{
+  height: 20vw;
+  width: 30%;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+
+
+
+.modal-content{
+  background-color: transparent;
+}
+
+
+.modal-content img{
+  margin-left: 85px;
+  margin-top: 10px;
+  display: flex;
+
+}
+
+.security_text{
+  font-size: 20px;
+  font-family: Satoshi-Bold;
+}
+
+
+#doneButton{
+  padding: 15px;
+  background-color: var(--clr-button-primary-color);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  width: 70%;
+  margin-top: 14px;
+  margin-left: 32px;
+
+}
+

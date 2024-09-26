@@ -1,0 +1,1252 @@
+
+body {
+    background-color: white;
+	
+}
+
+@font-face {
+    font-family: Satoshi-Bold;
+    src: url(/fonts/Satoshi-Bold.woff);
+   
+  }
+
+@font-face {
+  font-family: Satoshi-Medium;
+  src: url(/fonts/Satoshi-Medium.woff);
+ 
+}
+
+@font-face {
+    font-family: Satoshi-Regular;
+    src: url(/fonts/Satoshi-Regular.woff);
+  
+  }
+
+.logo{
+    height: 10vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3vw;
+ 
+}
+
+  #Ecews_logo{
+    width: 5.7%;
+    height: 30px;
+    margin-left: 2.5vw;
+   
+}
+
+#skywatch{
+    width: 7%;
+    margin-right: 0.5vw;
+
+}
+
+.Left_container{
+    background-color: transparent;
+    height: 99vh;
+    margin-left: 2vw;
+    width: 60%;
+    /* float: left; */
+    /* margin-top: 10px; */
+    user-select: none;
+
+}
+
+.Right_container{
+    border-radius: 10px;
+    background-color: transparent;
+    height: 99vh;
+    width: 35%;
+    /* display: flex; */
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* float: right; */
+    /* margin-top: 10px; */
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    margin-right: 2vw;
+    user-select: none;
+
+}
+
+.container{
+    height: 49.2vh;
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    /* visibility: hidden; */
+   
+}
+
+.container2{
+    width: 96%;
+    /* color: white; */
+    height: 46vh;
+    border-radius: 9px;
+    border: 2px solid rgb(236, 228, 228);
+    margin-top: 1.2vw;
+    overflow-x: auto; 
+    padding: 1vw; 
+    background-color:transparent; 
+    line-height: 1.5; 
+    scrollbar-width: none;
+  
+}
+
+
+#greeting{
+    color: white;
+    font-family: Satoshi-Regular;
+    margin-left: 20px;
+    align-content: center;
+   /* margin-top: 30px; */
+    /* background-color: #031047; */
+ 
+    
+
+}
+
+#timeContainer{
+    /* background-color: #511ad3; */
+    margin-left: 20px;
+    /* margin-top: 20px; */
+    font-family: Satoshi-Regular;
+    color: white;
+    font-size: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    
+
+}
+
+
+
+#timeDiv{
+    color: white;
+    /* display: flex; */
+    font-family: Satoshi-Regular;
+    /* background-color: rgb(103, 214, 214); */
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+ 
+
+}
+
+/* .info-container{
+    display: flex;
+} */
+
+
+
+
+#dayOfWeekDiv{
+  /* background-color: blue; */
+
+  font-size: 15px;
+  /* display: flex; */
+  font-family: Satoshi-Regular;
+  
+}
+
+#dateDiv{
+    font-family: Satoshi-Regular;
+    /* background-color: rgb(29, 29, 9); */
+    font-size: 12px;
+    margin-right: 0px;
+    
+}
+
+
+.weather{
+    /* background-color: indianred; */
+    margin-left: 20px;
+    height: 170px;
+    /* display: flex; */
+    position: relative;
+    color: white;
+    
+}
+
+.city{
+    display: none;
+}
+
+.temp{
+    /* background-color: #511ad3; */
+    position: absolute;
+    top: 110px ;
+    left: 450px;
+
+}
+
+
+.weather_forecast{
+    /* background-color: #031047; */
+    color: white;
+    font-family: Satoshi-Regular;
+    position: absolute;
+    top: 80px ;
+
+}
+
+
+.weather-situation{
+    /* background-color: aqua; */
+    position: absolute;
+    top: 115px ;
+  
+}
+
+
+
+h1 {
+    font-size: 24px;
+}
+
+
+.details {
+    display: flex;
+    
+}
+
+
+.humidity_div{
+    display: flex;
+    align-items: center;
+    margin-top: 115px;
+    margin-left: 187px;
+
+}
+
+.humidity_div img{
+    width: 20%;
+    margin-left: 10px;
+}
+
+
+.wind_speed{
+    display: flex;
+    align-items: center;
+    margin-top: 115px;
+    margin-left: 10px;
+}
+
+.wind_speed img{
+    width: 15%;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+.state-info{
+    /* background-color: purple; */
+    float: right;
+    display: flex;
+    font-size: 10px;
+    color: white;
+    font-family: Satoshi-Regular;
+    position: absolute;
+    top: 90px;
+    right: 530px;
+    border-radius: 5px;
+    border: 2px solid rgb(100, 91, 91); /* Width, style, and color of the border */
+    padding: 5px; /* Optional: adds some space between the text and the border */
+}
+
+/* #locationIcon{
+    margin-right: 100px;
+} */
+
+#stateName{
+    margin-top: 2px;
+}
+
+.weather-icon {
+    width: 70px;
+    /* background-color: rgb(80, 60, 60); */
+    float: right;
+    margin-right: 20px;
+    margin-top: 85px;
+ 
+  
+}
+
+
+
+#securityUpdate{
+    /* background-color: purple; */
+    font-family: Satoshi-Regular;
+
+}
+
+
+.report{
+    color: black;
+    font-family: Satoshi-Bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+   
+}
+
+
+.update{
+
+    color: black;
+    font-family: Satoshi-Bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+   
+  
+}
+
+
+
+#dateDiv2{
+    
+    font-family: Satoshi-Regular;
+}
+
+#timeDiv2 {
+   margin-top: 10px;
+   font-family: Satoshi-Regular;
+   margin-bottom: 20px;
+}
+
+
+
+
+
+.coverage_areas{
+    width: 100%;
+    background-color: transparent;
+    font-family: Satoshi-Bold;
+    margin-bottom: 0.7vw;
+    
+}
+
+.city-links{
+    border: 2px solid rgb(236, 228, 228);
+    background-color: transparent;
+    width: 95%;
+    height: 42vh;
+    padding: 0.7vw;
+    font-family: Satoshi-Regular;
+    border-radius: 10px;
+    /* margin-top: 10px; */
+}
+
+
+.main-container{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.uyo-state{
+    background-color: #b9ab13;
+    height: 3vw;
+    width: 100%;
+    color: black;
+}
+
+/* ..................... Uyo */
+.uyoButtonClick{
+    height: 5.2vh;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftContainer{
+    height: 5vh;
+    width: 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftContainer img{
+    height: 2.5vw;
+}
+
+
+.rightContainer{
+    height: 5vh;
+    width: 91%;
+    background-color: white;
+   
+}
+
+.rightContainer input{
+    height: 3vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.rightContainer input:hover{
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(223, 220, 220);
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+.address {
+    height: 1.8vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 0.4vw;
+}
+
+
+/* ..................... */
+
+/* ..................... Ado-Ekiti */
+.adoEkitiButtonClick{
+    height: 5.2vh;
+    width: 100%;
+    background-color:white;
+    margin-top: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftContainer{
+    height: 5vh;
+    width: 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftContainer img{
+    height: 2.5vw;
+}
+
+
+.rightContainer{
+    height: 5vh;
+    width: 91%;
+    background-color: white;
+   
+}
+
+.rightContainer input{
+    height: 3vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.rightContainer input:hover{
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(223, 220, 220);
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+.address {
+    height: 1.8vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 0.4vw;
+}
+
+
+/* ..................... */
+
+/* ..................... Calabar */
+.calabarButtonClick{
+    height: 5.2vh;
+    width: 100%;
+    background-color:white;
+    margin-top: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftContainer{
+    height: 5vh;
+    width: 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftContainer img{
+    height: 2.5vw;
+}
+
+
+.rightContainer{
+    height: 5vh;
+    width: 91%;
+    background-color: white;
+   
+}
+
+.rightContainer input{
+    height: 3vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.rightContainer input:hover{
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(223, 220, 220);
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+.address {
+    height: 1.8vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 0.4vw;
+}
+
+
+/* ..................... */
+
+/* ..................... Asaba */
+.asabaButtonClick{
+    height: 5.2vh;
+    width: 100%;
+    background-color:white;
+    margin-top: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftContainer{
+    height: 5vh;
+    width: 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftContainer img{
+    height: 2.5vw;
+}
+
+
+.rightContainer{
+    height: 5vh;
+    width: 91%;
+    background-color: white;
+   
+}
+
+.rightContainer input{
+    height: 3vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.rightContainer input:hover{
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(223, 220, 220);
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+.address {
+    height: 1.8vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 0.4vw;
+}
+
+
+/* ..................... */
+
+
+/* ..................... Abuja */
+.abujaButtonClick{
+    height: 5.2vh;
+    width: 100%;
+    background-color:white;
+    margin-top: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftContainer{
+    height: 5vh;
+    width: 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftContainer img{
+    height: 2.5vw;
+}
+
+
+.rightContainer{
+    height: 5vh;
+    width: 91%;
+    background-color: white;
+   
+}
+
+.rightContainer input{
+    height: 3vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.rightContainer input:hover{
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(223, 220, 220);
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+.address {
+    height: 1.8vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 0.4vw;
+}
+
+
+/* ..................... */
+
+
+/* ..................... Osun */
+
+.osunButtonClick{
+    height: 5.2vh;
+    width: 100%;
+    background-color:white;
+    margin-top: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftContainer{
+    height: 5vh;
+    width: 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftContainer img{
+    height: 2.5vw;
+}
+
+
+.rightContainer{
+    height: 5vh;
+    width: 91%;
+    background-color: white;
+   
+}
+
+.rightContainer input{
+    height: 3vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.rightContainer input:hover{
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(223, 220, 220);
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+.address {
+    height: 1.8vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 0.4vw;
+}
+
+
+/* ..................... */
+
+
+/* ..................... Ebonyi */
+
+.ebonyiButtonClick{
+    height: 5.2vh;
+    width: 100%;
+    background-color:white;
+    margin-top: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftContainer{
+    height: 5vh;
+    width: 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftContainer img{
+    height: 2.5vw;
+}
+
+
+.rightContainer{
+    height: 5vh;
+    width: 91%;
+    background-color: white;
+   
+}
+
+.rightContainer input{
+    height: 3vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.rightContainer input:hover{
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(223, 220, 220);
+    font-size: 1.1vw;
+    font-family: Satoshi-Regular;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+.address {
+    height: 1.8vh;
+    width: 100%;
+    background-color: transparent;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 0.4vw;
+}
+
+
+/* ..................... */
+
+
+
+
+
+.link a {
+    text-decoration: none;
+    color: black;
+}
+
+.link :hover{
+    color: rgb(18, 78, 3);
+}
+
+.link{
+    /* background-color: #c4e0d6; */
+    /* float: right; */
+    
+    line-height: 1.3;
+    /* height: 30px; */
+}
+
+.uyo-state img{
+    float: left;
+    margin-right: 10px;
+    width: 9%;
+}
+
+
+.uyo-address{
+    font-size: 13px;
+}
+
+
+
+.ekiti-state{
+    /* background-color: #b96313; */
+    height: 40px;
+    width: 100%;
+    color: black;
+    margin-top: 5px;
+
+   
+}
+  
+/* .ekiti-state span{
+    visibility: hidden;
+} */
+
+
+.ekiti-state img{
+    float: left;
+    margin-right: 10px;
+    width: 9%;
+}
+
+
+.ekiti-address{
+    font-size: 13px;
+    
+}
+
+
+.calabar-address{
+    font-size: 13px;
+
+}
+
+
+
+.calabar-state{
+    /* background-color: #13b929; */
+    height: 40px;
+    width: 100%;
+    color: black;
+    margin-top: 5px;
+   
+}
+  
+
+.calabar-state img{
+    float: left;
+    margin-right: 10px;
+    width: 9%;
+}
+
+
+.delta-address{
+    font-size: 13px;
+}
+
+
+.delta-state{
+    /* background-color: #c6c0d3; */
+    height: 40px;
+    width: 100%;
+    color: black;
+    margin-top: 5px;
+   
+}
+  
+
+.delta-state img{
+    float: left;
+    margin-right: 10px;
+    width: 9%;
+}
+
+
+
+.abuja-address{
+    font-size: 13px;
+}
+
+
+
+.abuja-state{
+    /* background-color: #c410ac; */
+    height: 40px;
+    width: 100%;
+    color: black;
+    margin-top: 5px;
+   
+}
+  
+
+.abuja-state img{
+    float: left;
+    margin-right: 10px;
+    width: 9%;
+}
+
+
+
+.osun-address{
+    font-size: 13px;
+}
+
+
+.osun-state{
+    /* background-color: #10c488; */
+    height: 40px;
+    width: 100%;
+    color: black;
+    margin-top: 5px;
+   
+}
+  
+
+.osun-state img{
+    float: left;
+    margin-right: 10px;
+    width: 9%;
+}
+
+
+
+.ebonyi-address{
+    font-size: 13px;
+}
+
+
+
+.ebonyi-state{
+    /* background-color: #dd580a; */
+    height: 40px;
+    width: 100%;
+    color: black;
+    margin-top: 5px;
+   
+}
+  
+
+.ebonyi-state img{
+    float: left;
+    margin-right: 10px;
+    width: 9%;
+
+}
+
+
+
+
+.important_contacts{
+    /* margin-top: 40px; */
+    border: 2px solid rgb(236, 228, 228);
+    background-color: transparent;
+    width: 96%;
+    height: 50vh;
+    border-radius: 10px;
+    margin-top: 1vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+
+}
+
+
+
+
+.important_contact_heading{
+    background-color: transparent;
+    font-family: Satoshi-Bold;
+    width: 100%;
+    height: 4vh;
+    font-family: Satoshi-Bold;
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vw;
+    
+}
+
+
+.securityComponent{
+    height: 2.5vw;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vw;
+   
+}
+
+.securityComponentRapperLeft{
+    height: 2.5vw;
+    width: 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.securityComponentRapperRight{
+    height: 2.5vw;
+    width: 90%;
+    background-color: transparent;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.securitySubject{
+    height: 1.25vw;
+    width: 100%;
+    background-color: transparent;
+    font-family: Satoshi-Bold;
+    font-size: 1vw;
+}
+
+.phone{
+    height: 1.25vw;
+    width: 100%;
+    background-color: transparent;
+    font-family: Satoshi-Regular;
+    font-size: 1.7vh;
+}
+
+
+.securityComponentRapperLeft img{
+    height: 1.2vw;
+    
+}
+
+
+
+.security_manager{
+    background-color: #c4e0d6;
+    margin-top: 10px;
+}
+
+
+.vector_img{
+    height: 2vh;
+    width: 20%;
+    background-color: #b9ab13;
+    
+}
+
+.vector_img img{
+    float: left;
+    margin-right: 10px;
+    margin-top: 6px;
+    width: 6%;
+}
+
+.name{
+    font-family: Satoshi-Bold;
+    font-size: 14px;
+}
+
+.contact{
+    font-family: Satoshi-Regular;
+    font-size: 13px;
+}
+
+
+
+.security_associate{
+    /* background-color: #26b683; */
+    margin-top: 10px;
+}
+
+
+.emergency_service{
+    /* background-color: #9426b6; */
+    margin-top: 10px;
+}
+
+.emergency_response{
+    /* background-color: #b6265d; */
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 768px) { /* Adjust breakpoint as needed */
+    .Right_container {
+       
+        width: 100%;
+    }
+
+ 
+    .Left_container{
+        width: 100%;
+    }
+
+
+    .coverage_areas{
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .city-links{
+        width: 100%;
+        height: 400px;
+    }
+
+}
+
+
+
+
