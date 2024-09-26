@@ -1,4 +1,4 @@
-<img src="https://socialify.git.ci/sharmachaitanya945/Weather-app-shepherd/image?description=1&font=Raleway&language=1&name=1&owner=1&pattern=Brick%20Wall&stargazers=1&theme=Dark" alt="Weather-app-shepherd" width="640" height="320" />
+<img src="/Weather-app-shepherd/image?description=1&font=Raleway&language=1&name=1&owner=1&pattern=Brick%20Wall&stargazers=1&theme=Dark" alt="Weather-app-shepherd" width="640" height="320" />
 
 # 🌤️ Weather App ☔
 
@@ -27,7 +27,7 @@ Welcome to the Weather App! 🌍 A simple yet powerful application to fetch and 
 - 🎨 **CSS**
 - 📜 **JavaScript**
 - 🌐 **OpenWeatherMap API**
-- 🧙‍♂️ **Shepherd.js** (for the guided tour)
+- 🧙‍♂️ **PHP**
 
 ## 📦 Installation
 
